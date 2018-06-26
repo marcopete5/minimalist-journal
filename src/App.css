@@ -1,0 +1,434 @@
+/* .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+} */
+
+.myNav {
+    background-color: black;
+    height: 50px;
+    margin: -8px;
+}
+
+.ButtonAppBar-root-1 {
+    margin: -8px;
+}
+
+.MuiAppBar-colorPrimary-10 {
+    background-color: black !important;
+}
+
+.myForm {
+    color: #333;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    width: 53%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #00000069;
+    padding: 30px 10px 30px 40px;
+    border-radius: 10px;
+    display: none;
+}
+.myForm input{
+    margin: 8px 0px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px #1c1b1b52 solid;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    width: 90%;
+}
+.myForm label {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.myForm input:focus{
+    border: 1px solid #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.myForm input[type="checkbox"]{
+    width: 10%;
+    float: right;
+}
+
+.myForm input::-webkit-input-placeholder {
+    color: #1c1b1b52;
+}
+.myForm form {
+    display: grid;
+    grid-template-areas: 
+    "ma ma ma ma"
+    "tr tr tv tv"
+    "so so sa sa"
+    "sc sc pr pr"
+    "st st pp pp"
+    "bk bk if if"
+    "sw sw pv pv"
+    "oa oa mb mb"
+    "bp bp tk tk"
+    "np np ts ts"
+    "bt bt wt wt"
+    "ab ab dt dt"
+    "me me vo vo"
+    "cd cd mg mg"
+    "et et ml ml"
+    ". . . sb";
+}
+
+#one {
+    grid-area: ma;
+}
+#one input {
+    width: 95%;
+}
+#two {
+    grid-area: tr;
+}
+#three {
+    grid-area: so;
+}
+#four{
+    grid-area: tv;
+}
+#five{
+    grid-area: sa;
+}
+#six{
+    grid-area: sc;
+}
+#seven{
+    grid-area: pr;
+}
+#eight{
+    grid-area: me;
+}
+#nine{
+    grid-area: vo;
+}
+#ten{
+    grid-area: cd;
+}
+#eleven{
+    grid-area: st;
+}
+#twelve{
+    grid-area: mg;
+}
+#thirteen{
+    grid-area: tk;
+}
+#fourteen{
+    grid-area: np;
+}
+#fifteen{
+    grid-area: pp;
+}
+#sixteen{
+    grid-area: ts;
+}
+#seventeen{
+    grid-area: ab;
+}
+#eighteen{
+    grid-area: wt;
+}
+#nineteen{
+    grid-area: bt;
+}
+#twenty{
+    grid-area: bk;
+}
+#twentyone{
+    grid-area: dt;
+}
+#twentytwo{
+    grid-area: ml;
+}
+#twentythree{
+    grid-area: et;
+}
+#twentyfour{
+    grid-area: if;
+}
+#twentyfive{
+    grid-area: sw;
+}
+#twentysix{
+    grid-area: pv;
+}
+#twentyseven{
+    grid-area: oa;
+}
+#twentyeight{
+    grid-area: mb;
+}
+#twentynine{
+    grid-area: bp;
+}
+#thirty{
+    grid-area: sb;
+    position: relative;
+    right: 10px;
+    bottom: -13px;
+}
+.blueBtn{
+    height: 39px;
+    border: 1px solid white;
+    padding: 0px 23px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-family: arial;
+}
+
+#boxBtn {
+    position: absolute;
+    bottom: -76px;
+    right: -6px;
+}
+
+
+
+.box {
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    display: flex;
+}
+
+#main {
+    display: inline-block;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+}
+
+#travel {
+    display: inline-block;
+    position: absolute;
+    top: -40px;
+    left: 100px;
+}
+
+.line {
+    border: 1px solid black;
+    height: 25px;
+}
+
+#scriptures {
+    position: absolute;
+    top: -4px;
+    right: 8px;
+    transform: rotate(316deg);
+}
+
+#prayer {
+    position: absolute;
+    top: -4px;
+    right: 8px;
+    transform: rotate(226deg);
+}
+
+#meditation {
+    position: absolute;
+    right: -30px;
+    top: -17px;
+    font-size: 20px;
+}
+
+#travelArrow {
+    position: absolute;
+    top: -22px;
+    right: 90px;
+}
+
+#voluntary {
+    transform: rotate(270deg);
+    position: absolute;
+    display: inline-block;
+    top: 90px;
+    left: -40px;
+}
+
+#day {
+    display: inline-block;
+    font-size: 25px;
+    width: 5%;
+    position: absolute;
+    bottom: -30px;
+    left: -17px;
+}
+
+#self {
+    position: absolute;
+    bottom: 100px;
+}
+
+#meaningful {
+    position: absolute;
+    bottom: 53px;
+    left: 5px;
+    font-size: 23px;
+}
+
+#thanks {
+    font-size: 15px;
+    position: absolute;
+    bottom: 62px;
+    left: 3px;
+}
+
+.newPeople {
+    position: absolute;
+    height: 10px;
+    bottom: 48px;
+}
+
+#new1 {
+    left: 4px;
+}
+
+#new2 {
+    left: 8px;
+}
+
+#new3 {
+    left: 12px;
+}
+
+#new4 {
+    left: 16px;
+}
+
+#new5 {
+    left: 11px;
+    bottom: 44px;
+    height: 18px;
+    transform: rotate(300deg);
+}
+
+#personalProject {
+    position: absolute;
+    bottom: 26px;
+    font-size: 20px;
+    left: 1px;
+}
+
+#topic {
+    position: absolute;
+    bottom: -23px;
+    font-size: 21px;
+    left: 3px;
+}
+
+#article {
+    position: absolute;
+    bottom: -19px;
+    left: 100px;
+    font-size: 17px;
+}
+
+#wake {
+    position: absolute;
+    bottom: -44px;
+    font-size: 20px;
+}
+
+#sleep {
+    position: absolute;
+    bottom: -44px;
+    left: 231px;
+    font-size: 20px;
+}
+
+#bike {
+    position: absolute;
+    bottom: -26px;
+    font-size: 21px;
+    left: 130px;
+}
+
+#diet {
+    position: absolute;
+    bottom: -23px;
+    font-size: 21px;
+    right: 2px;
+}
+
+#cost {
+    position: absolute;
+    bottom: -5px;
+    right: -25px;
+    font-size: 20px;
+}
+
+#exercise {
+    position: absolute;
+    bottom: 17px;
+    right: -51px;
+    font-size: 20px;
+}
+
+#sleepWell {
+    position: absolute;
+    bottom: 57px;
+    right: -30px;
+}
+
+#tvSleep {
+    bottom: 56px;
+    right: -20px;
+    position: absolute;
+    transform: rotate(90deg);
+    height: 26px;
+}
+
+#fast {
+    position: absolute;
+    bottom: 73px;
+    right: -23px;
+    font-size: 30px;
+}
+
+#overate {
+    position: absolute;
+    bottom: 100px;
+    right: -26px;
+}
+
+#mb {
+    height: 40px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    transform: rotate(45deg);
+}
+
+#bp {
+    height: 40px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    transform: rotate(315deg);
+}
