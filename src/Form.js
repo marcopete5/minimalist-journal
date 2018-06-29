@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {addBox} from './redux/options';
+
 
 class Form extends Component {
     constructor(){
@@ -14,7 +17,10 @@ class Form extends Component {
             prayer: false,
             meditation: '',
             voluntary: '',
-            day: '',
+            day1: '',
+            day2: '',
+            day3: '',
+            day4: '',
             self: false,
             meaningful: '',
             thanks: false,
@@ -46,10 +52,18 @@ class Form extends Component {
             this.setState({[e.target.name]: e.target.value})
         }
     }
+
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.addBox(this.state)
+    }
     render() {
         return (
             <div className='myForm'>
             <form>
+                <div id="zero">
+                    <h1>Journal Form</h1>
+                </div>
                 <div id="one">
                     <label>Main Accomplishment</label>
                     <input type="text" placeholder='Main Accomplishment' value={this.state.main} name='main' onChange={this.handleChange} />
@@ -88,7 +102,10 @@ class Form extends Component {
                 </div>
                 <div id="ten">
                     <label>Current Day</label>
-                    <input type="number" placeholder='Current Day' value={this.state.day} name='day' onChange={this.handleChange} />
+                    <input type="text" value={this.state.day1} name='day1' onChange={this.handleChange} />
+                    <input type="text" value={this.state.day2} name='day2' onChange={this.handleChange} />
+                    <input type="text" value={this.state.day3} name='day3' onChange={this.handleChange} />
+                    <input type="text" value={this.state.day4} name='day4' onChange={this.handleChange} />
                 </div>
                 <div id='eleven'>
                     <label>Had Self Time</label>
@@ -167,7 +184,7 @@ class Form extends Component {
                     <input type="checkbox" value={this.state.bp} name='bp' onChange={this.handleChange} />
                 </div>
                 <div id="thirty">
-                    <button className='blueBtn'>Submit</button>
+                    <button className='blueBtn' onClick={this.handleSubmit}>Submit</button>
                 </div>
             </form>
             </div>
@@ -175,4 +192,4 @@ class Form extends Component {
     }
 }
 
-export default Form;
+export default connect(state => state, {addBox})(Form);

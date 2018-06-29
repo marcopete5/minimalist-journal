@@ -1,11 +1,10 @@
-/* .modal {
+.modal {
   position: fixed;
-  top: 0;
   left: 0;
   width:100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-} */
+}
 
 .myNav {
     background-color: black;
@@ -31,26 +30,57 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border: 2px solid #00000069;
+    border: 1px #ddd9 solid;
+    background-color: #fff;
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
     padding: 30px 10px 30px 40px;
-    border-radius: 10px;
-    display: none;
+    display: inline-block;
+    overflow-y: scroll;
+    font-family: Poppins, sans-serif;
 }
+
+/* @media (max-width: 600px){
+    .myForm {
+        width: 68%;
+        height: 78vh;
+        top: 54%;
+    }
+} */
+@media (min-width: 801px) {
+    .myForm {
+        width: 670px;
+        height: 77vh;
+        top: 53%;
+    }
+}
+
+@media (max-width: 800px){
+    .myForm {
+        width: 68%;
+        height: 79vh;
+        top: 54%;
+    }
+}
+
+
 .myForm input{
     margin: 8px 0px;
     display: inline-block;
     padding: 5px;
     border-radius: 5px;
-    border: 1px #1c1b1b52 solid;
-    font-size: 15px;
-    font-family: arial, sans-serif;
-    font-weight: 500;
+    border: 1px #ebedf2 solid;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #333;
     width: 90%;
 }
 .myForm label {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: 6px;
 }
 
 .myForm input:focus{
@@ -62,14 +92,18 @@
 .myForm input[type="checkbox"]{
     width: 10%;
     float: right;
+    position: relative;
+    top: 6px;
 }
 
 .myForm input::-webkit-input-placeholder {
-    color: #1c1b1b52;
+    color: #9698a1;
+    font-weight: 300;
 }
 .myForm form {
     display: grid;
     grid-template-areas: 
+    "jf jf jf jf"
     "ma ma ma ma"
     "tr tr tv tv"
     "so so sa sa"
@@ -88,6 +122,60 @@
     ". . . sb";
 }
 
+@media (max-width: 800px){
+    .myForm form {
+        grid-template-areas: 
+    "jf"
+    "ma"
+    "tr"
+    "tv"
+    "so"
+    "sa"
+    "sc"
+    "pr"
+    "st"
+    "pp"
+    "bk"
+    "if"
+    "sw"
+    "pv"
+    "oa"
+    "mb"
+    "bp"
+    "tk"
+    "np"
+    "ts"
+    "bt"
+    "wt"
+    "ab"
+    "dt"
+    "me"
+    "vo"
+    "cd"
+    "mg"
+    "et"
+    "ml"
+    "sb"; 
+    }
+}
+#zero {
+    grid-area: jf;
+    position: relative;
+    top: -28px;
+    border-bottom: 1px solid #ddd6;
+    width: 109%;
+    left: -40px;
+}
+#zero h1 {
+    position: relative;
+    left: 40px;
+}
+
+@media (max-width: 800px){
+    #zero h1 {
+        font-size: 25px;
+    }
+}
 #one {
     grid-area: ma;
 }
@@ -120,6 +208,17 @@
 }
 #ten{
     grid-area: cd;
+}
+#ten input{
+    width: 3%;
+    position: relative;
+    left: 17px;
+    border-radius: 0px;
+    margin: 8px 2px;
+}
+#ten label {
+    position: relative;
+    top: 0px;
 }
 #eleven{
     grid-area: st;
@@ -271,12 +370,36 @@
     left: -40px;
 }
 
-#day {
+#day1 {
     display: inline-block;
     font-size: 25px;
     width: 5%;
     position: absolute;
-    bottom: -30px;
+    bottom: 60px;
+    left: -17px;
+}
+#day2 {
+    display: inline-block;
+    font-size: 25px;
+    width: 5%;
+    position: absolute;
+    bottom: 40px;
+    left: -17px;
+}
+#day3 {
+    display: inline-block;
+    font-size: 25px;
+    width: 5%;
+    position: absolute;
+    bottom: 20px;
+    left: -17px;
+}
+#day4 {
+    display: inline-block;
+    font-size: 25px;
+    width: 5%;
+    position: absolute;
+    bottom: 0px;
     left: -17px;
 }
 
